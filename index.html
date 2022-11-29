@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- THE BIG META -->
+	<title>You'll WIN!</title>  <!-- TRANSLATE -->
+	<meta name="description" content="A visual novel based game about stress, anxiety, and depression. You play as an avatar of anxiety (a Dog)." /> 
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/game.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - -->
+<!-- THE GAME ITSELF, FRONT AND CENTER -->
+<!-- - - - - - - - - - - - - - - - - - -->
+
+<div id="game_container">
+
+	<!-- The main game -->
+	<canvas id="game_canvas"></canvas>
+	<div id="game_words"></div>
+	<div id="game_hp"></div>
+	<div id="game_choices"></div>
+
+	<!-- Click to Advance-->
+	<div id="click_to_advance">
+		<span id="cta_text1">
+			<div class="mini-icon" pic="click" style="top:3px;"></div>
+			<span id="instructions_if_not_mobile">
+				click or spacebar <!-- TRANSLATE THIS -->
+			</span>
+			<span id="instructions_if_mobile" style="display:none">
+				tap anywhere <!-- TRANSLATE THIS -->
+			</span>
+		</span>
+		<span id="cta_text2">
+			<div class="mini-icon" pic="next"></div>
+		</span>
+	</div>
+
+	<!-- LOADING -->
+	<div id="loading">
+		<div id="loading_bar">
+			<div id="loading_bar_bg"></div>
+			<div id="loading_pic"></div>
+		</div>
+	</div>
+</div>
+
+<script src="scripts/lib/conversion.js"></script>
+<script src="scripts/lib/enableEdit.js"></script>
+<script src="scripts/lib/filterLables.js"></script>
+<script src="scripts/lib/getWithOutToken.js"></script>
+<script src="scripts/lib/getWithToken.js"></script>
+<script src="scripts/lib/helpers.js"></script>
+<script src="scripts/lib/howler.min.js"></script>
+<script src="scripts/lib/minpubsub.min.js"></script>
+<script src="scripts/lib/postWithOutToken.js"></script>
+<script src="scripts/lib/postWithToken.js"></script>
+<script src="scripts/lib/rsvp.min.js"></script>
+<script src="scripts/game/Loader.js"></script>
+<script src="scripts/game/Game.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
